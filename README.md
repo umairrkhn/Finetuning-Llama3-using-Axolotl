@@ -53,7 +53,8 @@ The training configuration is defined in a YAML file within the notebook and inc
   - Selection of the model to be used: `NousResearch/Llama-3.2-1B`.
   
 - **Dataset Path**: 
-  - The path to the dataset: `nldemo/story-summarization-demo`.
+  - The path to the dataset: `nldemo/story-summarization-demo`. 
+  - Refer to the [Axolotl documentation](https://axolotl-ai-cloud.github.io/axolotl/docs/dataset-formats/) to learn more about different dataset formats.
   
 - **Adapter Type**: 
   - Utilization of `qlora` for low-rank adaptation.
