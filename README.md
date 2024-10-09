@@ -1,6 +1,6 @@
-# Fine-Tuning LLaMA-3.2-1B with Axolotl and QLoRA
+# Fine-Tuning Llama-3.2-1B with Axolotl and QLoRA
 
-This repository contains a Jupyter Notebook for fine-tuning the [LLaMA-3.2-1B](https://huggingface.co/NousResearch/Llama-3.2-1B) model using the Axolotl framework and QLoRA (Quantized Low-Rank Adaptation). The notebook is designed to run in the Google Colab environment with T4 GPU support.
+This repository contains a Jupyter Notebook for fine-tuning the [Llama-3.2-1B](https://huggingface.co/NousResearch/Llama-3.2-1B) model using the Axolotl framework and QLoRA (Quantized Low-Rank Adaptation). The notebook is designed to run in the Google Colab environment with T4 GPU support.
 
 ## Overview
 
@@ -8,7 +8,7 @@ In this project, we utilize the Axolotl library to simplify the process of fine-
 
 ### Key Features
 
-- **Fine-tuning**: Fine-tune the LLaMA-3.2-1B model.
+- **Fine-tuning**: Fine-tune the Llama-3.2-1B model.
 - **Dataset**: Use the [story summarization dataset](https://huggingface.co/datasets/nldemo/story-summarization-demo) from Hugging Face.
 - **Efficiency**: Implement efficient training techniques with QLoRA.
 - **Ease of Use**: Utilize Axolotl for easy configuration and model training.
@@ -21,7 +21,7 @@ Before running the notebook, ensure that you have access to Google Colab with GP
 
 The necessary dependencies are automatically installed within the notebook, including:
 
-- **Axolotl**: A framework for fine-tuning LLaMA models.
+- **Axolotl**: A framework for fine-tuning Llama models.
 - **Flash Attention**: An optimized attention mechanism for faster training.
 - **DeepSpeed**: A library for efficient distributed training.
 
@@ -61,15 +61,18 @@ The training configuration is defined in a YAML file within the notebook and inc
   
 - **Hyperparameters**: 
   - Configuration of various training parameters, including:
+    - Adapter (QLora)
     - Learning rate
     - Batch size
     - Gradient accumulation settings
+    - Number of Epochs
+    - Optimizer
 
 For more detailed information on the available configuration options, please refer to the [Axolotl documentation](https://axolotl-ai-cloud.github.io/axolotl/docs/config.html).
 
 ## Model and Dataset Links
 
-- **Base Model**: [LLaMA-3.2-1B](https://huggingface.co/NousResearch/Llama-3.2-1B)
+- **Base Model**: [Llama-3.2-1B](https://huggingface.co/NousResearch/Llama-3.2-1B)
 - **Dataset**: [Story Summarization Dataset](https://huggingface.co/datasets/nldemo/story-summarization-demo)
 - **Axolotl Repository**: [Axolotl on GitHub](https://github.com/axolotl-ai-cloud/axolotl)
 
